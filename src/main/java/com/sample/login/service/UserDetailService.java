@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 public class UserDetailService implements UserDetailsService {
   private UserRepository userRepository;
 
+  //로그인 할때 이메일로 사용자 정보를 가져오는 api
   @Override
   public UserDetails loadUserByUsername(String email) {
     return userRepository.findByEmail(email).orElseThrow(() ->
