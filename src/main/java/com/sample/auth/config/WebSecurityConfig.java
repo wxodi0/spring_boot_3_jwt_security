@@ -1,4 +1,4 @@
-package com.sample.login.auth.config;
+package com.sample.auth.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -56,7 +56,7 @@ public class WebSecurityConfig {
       //로그인 폼 설정
       .formLogin((login) ->
         login.loginPage("/login")
-          .defaultSuccessUrl("/articles")
+          .defaultSuccessUrl("/index") // <- 로그인이 되면 이동할 url
       )
 
       //로그아웃 폼 설정
