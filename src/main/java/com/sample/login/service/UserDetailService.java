@@ -1,11 +1,14 @@
 package com.sample.login.service;
-import com.sample.login.domain.User;
 import com.sample.login.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
+@RequiredArgsConstructor //di
+@Service
 public class UserDetailService implements UserDetailsService {
+
   private UserRepository userRepository;
 
   //로그인 할때 이메일로 사용자 정보를 가져오는 api
