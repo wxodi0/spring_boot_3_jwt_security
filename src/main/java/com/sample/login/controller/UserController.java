@@ -5,7 +5,6 @@ import com.sample.login.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
@@ -35,7 +34,7 @@ public class UserController {
       SecurityContextHolder.getContext().getAuthentication()
     );
 
-    return "로그인 성공";
+    return "로그아웃 성공";
   }
 
 }
