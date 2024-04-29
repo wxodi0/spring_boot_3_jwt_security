@@ -9,4 +9,4 @@
   * ### spring boot 3.0 + java 예제입니다. 
     ###### This is an example of making it easy to study according to spring boot 3.0   
 
-*공부를 위해서 만든*
+*정리를 위해서 만들었습니다.*
